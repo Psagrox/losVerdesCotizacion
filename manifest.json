@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "version": "0.1.2",
+    "name": "Los Verdes Cotizacón",
+    "description": "Extension para conocer la cotizacion del los distintos cambios de Dolar en Argentina",
+    "icons": {
+        "128": "billete.png"
+    },
+    "author": "Psagrox",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Los Verdes Cotizacón"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "https://dolarapi.com/v1/dolares"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
